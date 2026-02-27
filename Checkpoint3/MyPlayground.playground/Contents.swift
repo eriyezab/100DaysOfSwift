@@ -17,3 +17,25 @@ case .squat:
 default:
     print("Not implemented")
 }
+
+var roll = 0
+
+while roll != 7 {
+    roll = Int.random(in: 2...12)
+    print("I rolled a \(roll)")
+}
+
+print("Robber Time")
+
+// Checkpoint 3
+
+for i in 1...100 {
+    var fizzbuzz = "\(i) "
+    if i.isMultiple(of: 3) {
+        fizzbuzz += "fizz"
+    }
+    if i.isMultiple(of: 5) {
+        fizzbuzz += "buzz"
+    }
+    print(fizzbuzz)
+}
