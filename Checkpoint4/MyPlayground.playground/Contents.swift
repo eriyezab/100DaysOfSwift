@@ -18,3 +18,21 @@ func calculateBarSpeed(distance: Int, startFrame: Int, endFrame: Int, frameRate:
 }
 
 print(calculateBarSpeed(distance: 100, startFrame: 0, endFrame: 87, frameRate: 30))
+
+func range(_ from: Int, _ to: Int) -> [Int] {
+    if to < from {
+        print("from must be smaller than to")
+        return []
+    }
+    var res: [Int] = [Int]()
+    for i in from..<to {
+        res.append(i)
+    }
+    return res
+}
+
+print(range(0,10))
+print(range(0,-1))
+
+
+
